@@ -23,7 +23,6 @@ const eqObjects = function(object1, object2) {
   }
   for (let key of obj1) {
     let val1 = object1[key]; let val2 = object2[key];
-    console.log(object1.a,object2.b);
     if (Array.isArray(val1) && Array.isArray(val2)) {
       return eqArrays(val1,val2);
     }
